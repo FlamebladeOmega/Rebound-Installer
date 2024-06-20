@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window
+    x:Class="Rebound_Installer.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Rebound_Installer"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Window.SystemBackdrop>
+        <MicaBackdrop Kind="BaseAlt"/>
+    </Window.SystemBackdrop>
+    <Grid x:Name="ParentGrid">
+
+        <Grid x:Name="ChildGrid">
+            <Image Height="100" Margin="0,0,0,0">
+                <Image.Source>
+                    <BitmapImage UriSource="/Assets/logo.png"
+            DecodePixelHeight="100" />
+                </Image.Source>
+            </Image>
+            <TextBlock HorizontalAlignment="Center" Margin="0,100,0,0"><Bold>Welcome to the Rebound11 installer!</Bold></TextBlock>
+            <Button Margin="0,250,0,0" HorizontalAlignment="Center" Style="{StaticResource AccentButtonStyle}" Content="Let's continue" Click="Pag2"/>
+
+
+
+
+            
+        </Grid>
+        <Frame x:Name="ContentFrame" />
+
+    </Grid>
+</Window>
